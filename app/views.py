@@ -17,8 +17,8 @@ def test(request):
 	text1 = nltk.Text(text)
 	a  = nltk.pos_tag(text)
 	#return HttpResponse(a)
-	cbc ="abc"
-	return render(request, 'app/words.html',{ 'words' : cbc})
+	#cbc ="abc"
+	return render(request, 'app/words.html',{ 'words' : a})
     
 def base(request):
 	return HttpResponse(" hsgdhsdg ")

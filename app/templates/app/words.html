@@ -42,11 +42,15 @@ li a:hover:not(.active) {
 </head>
 <body>
 		<ul>
+			<li><a href="/">Home</a></li>
 			<li><a href="test">Word </a></li>
 		</ul>
 		
 		<h1>
-			{{"words"}}
+		 {% for w in words %}
+		 		{{w}} <br>
+		 {% endfor %}
+		 
 		</h1>
 
 </body>
